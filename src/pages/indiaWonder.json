@@ -1,0 +1,59 @@
+{
+    "india_wonders": [
+      {
+        "id" : 1,
+        "name": "Taj Mahal",
+        "location": "Agra, Uttar Pradesh",
+        "year_built": 1653,
+        "description": "A white marble mausoleum built by Emperor Shah Jahan in memory of his wife Mumtaz Mahal.",
+        "category": "Architecture",
+        "image_url": "./Api_images/indiaWonders/wonder12.jpg"
+      },
+      {
+        "id" : 2,
+        "name": "Qutub Minar",
+        "location": "Delhi",
+        "year_built": 1193,
+        "description": "A 73-meter tall minaret, part of the Qutub Complex, marking the beginning of Muslim rule in India.",
+        "category": "Historical Monument",
+        "image_url": "./Api_images/indiaWonders/wonder1.jpg"
+      },
+      {
+        "id" : 3,
+        "name": "Hampi",
+        "location": "Karnataka",
+        "year_built": "14th century",
+        "description": "Ruins of the ancient Vijayanagara Empire, featuring temples, palaces, and markets.",
+        "category": "Heritage Site",
+        "image_url": "./Api_images/indiaWonders/wonder2.jpg"
+      },
+      {
+        "id" : 4,
+        "name": "Ajanta and Ellora Caves",
+        "location": "Maharashtra",
+        "year_built": "2nd century",
+        "description": "A collection of Buddhist, Hindu, and Jain rock-cut caves, renowned for their sculptures and paintings.",
+        "category": "Heritage Site",
+        "image_url": "./Api_images/indiaWonders/wonder3.jpg"
+      },
+      {
+        "id" : 5,
+        "name": "Konark Sun Temple",
+        "location": "Odisha",
+        "year_built": 1250,
+        "description": "A 13th-century temple dedicated to the Sun God, designed in the shape of a colossal chariot.",
+        "category": "Architecture",
+        "image_url": "./Api_images/indiaWonders/wonder4.jpg"
+      },
+      {
+        "id" : 6,
+        "name": "Statue of Unity",
+        "location": "Gujarat",
+        "year_built": 2018,
+        "description": "The tallest statue in the world, standing at 182 meters, dedicated to Sardar Vallabhbhai Patel.",
+        "category": "Modern Monument",
+        "image_url": "./Api_images/indiaWonders/wonder5.jpg"
+      }
+    ]
+  }
+  

@@ -1,0 +1,278 @@
+.topics{
+    margin: 14vh 0 0 10vw;
+    height: 8vh;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.topics button{
+    height: 6vh;
+    width: 7vw;
+    border: none;
+    padding: 1vw;
+    font-size: 1.2vw;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 15px 15px 0 0;
+    background-color: rgba(255, 255, 255, 0.804);
+    transition: all 0.3s linear;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    margin-right: 2vw;
+}
+.topics button:hover{
+    background-color: #00000028;
+    border-bottom: 4px solid black;
+}
+.topics select{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid black;
+    font-size: 1.2vw;
+    height: 6vh;
+    width: 12vw;
+    font-family: 'Times New Roman', Times, serif;
+}
+.topics select:focus{
+    outline: none;
+}
+.topics select option{
+    font-family: 'Times New Roman', Times, serif;
+}
+.card-section{
+    height: 78vh;
+    width: 100%;
+    background-color: black;
+}
+.tops-container{
+    position: absolute;
+    margin-left: 15vw;
+    height: 75%;
+    width: 70%;
+    z-index: 100;
+    transform-style: preserve-3d;
+    transition: all 0.9s linear;
+}
+.tops-container .tops-card{
+    position: absolute;
+    backface-visibility: hidden;
+}
+.card-section::after{
+    content: "";
+    height: 17vw;
+    width: 17vw;
+    background-color: #750550;
+    border-radius: 50%;
+    position: absolute;
+    top: 40vh;
+    left: 8vw;
+    box-shadow: 5px 5px 50px #fc02a8,
+    5px 5px 100px #d70691,
+    5px 5px 150px #bd0580,
+    5px 5px 150px #87065c,
+    5px 5px 150px #85065b;
+}
+.card-section::before{
+    content: "";
+    height: 17vw;
+    width: 17vw;
+    background-color: green;
+    border-radius: 50%;
+    position: absolute;
+    top: 60vh;
+    left: 76vw;
+    box-shadow: 5px 5px 50px rgb(2, 248, 2),
+    5px 5px 100px rgb(3, 205, 3),
+    5px 5px 150px rgb(3, 166, 3),
+    5px 5px 200px rgb(2, 125, 2),
+    5px 5px 250px rgb(1, 95, 1);
+}
+.mountUl{
+    display: flex;
+}
+
+
+/* previous and next buttons */
+
+.button-group button{
+    height: 5vw;
+    width: 5vw;
+    border: none;
+    background-color: transparent;
+    color: black;
+    font-size: 2vw;
+    font-weight: bolder;
+}
+.prevBtn1{
+    position: absolute;
+    top: 35vh;
+    right: 70vw;
+}
+.nextBtn1{
+    position: absolute;
+    top: 35vh;
+    left: 70vw;
+}
+
+
+/* cards some styles */
+
+.all-card-left p span{
+    color: #E9B936;
+    font-size: 1.3vw;
+}
+.all-card-left h1{
+    text-align: center;
+    font-size: 2vw;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.all-card-right p {
+    line-height: 2vw;
+    margin-bottom: 3vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 100;
+}
+
+.all-card-right p span{
+    color: #E9B936;
+    font-size: 1.3vw;
+}
+.all-card-left p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 1vw;
+    margin-top: 1.5vw;
+    font-weight: 100;
+}
+
+/* all cards style */
+
+.all-card-outer-blur {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(25px);
+    margin-top: 2vw;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+.flex-dis{
+    display: flex;
+}
+.flex-none{
+    display: none;
+}
+
+/* Clock container styling*/
+.clock-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: #0d1117;
+    z-index: -1;
+}
+
+.time {
+    font-size: 2vw;
+    color: white;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 0.2vw;
+    animation: glow 1s infinite alternate, scale 3s infinite ease-in-out;
+}
+
+.tops-footer{
+    height: 5vh;
+    background-color: #083E49;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tops-footer p{
+    font-size: 2vh;
+    font-weight: lighter;
+    
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+    }
+    to {
+        text-shadow: 0 0 20px #00ff00, 0 0 40px #00ff00;
+    }
+}
+
+@keyframes scale {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@media (max-width: 500px) {
+    .topics{
+        height: 6vh;
+        flex-direction: column;
+        width: 47vw;
+        margin: 12vh 0 0 0;
+    }
+    .opt{
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    
+    .topics select {
+        font-size: 3.2vw;
+        height: 4vh;
+        width: 42vw;
+    }
+    .time {
+        font-size: 4vw;
+        margin-left: 2vh;
+    }
+    .clock-container {
+        justify-content: start;
+    }
+    .card-section::after {
+        height: 28vw;
+        width: 28vw;
+        left: 3vw;
+    }
+    .card-section::before {
+        height: 28vw;
+        width: 28vw;
+        left: 66vw;
+        top: 70vh;
+    }
+    .all-card-left p span {
+        /* color: #f8f2dc; */
+        color: yellow;
+        font-size: 3.3vw;
+    }
+    .all-card-left h1 {
+        font-size: 5vw;
+    }
+    .all-card-right p span{
+        color: #E9B936;
+        font-size: 3.3vw;
+    }
+    .all-card-right p {
+        line-height: 4vw;
+        color: #eee;
+    }
+    .button-group button{
+        height: 10vw;
+        width: 10vw;
+        color: white;
+        font-size: 7vw;
+    }
+}

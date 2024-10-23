@@ -1,0 +1,81 @@
+.tops-card{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(25px);
+    margin-top: 2vw;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+}
+
+/* mountain card left */
+.mountain-card-left{
+    height: 100%;
+    width: 45%;
+}
+.mountain-card-left img{
+    height: 50vh;
+    width: 100%;
+    border-radius: 25px 0 25px 0;
+}
+.mountain-card-right{
+    height: 100%;
+    width: 53%;
+    margin-left: 2vw;
+}
+.mountain-card-right ul {
+    font-size: 1.2vw;
+    color: #E9B936;
+}
+.mountain-card-right ul p{
+    color: white;
+    margin-bottom: 1vw;
+}
+.hero-card h1{
+    text-align: center;
+    color: #FE981A;
+    font-size: 2vw;
+    text-shadow: 2px 2px 30px #FE981A;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.hero-card img{
+    height: 55vh;
+    width: 50vw;
+    border-radius: 25px;
+    margin-top: 1vw;
+}
+
+@media (max-width : 500px) {
+    .tops-card{
+        flex-direction: column;
+    }
+    .mountain-card-left img {
+        height: 23vh;
+        border-radius: 25px;
+    }
+    .mountain-card-left{
+        height: 100%;
+        width: 100%;
+    }
+    .mountain-card-left p span {
+        color: white;
+        font-size: 3.3vw;
+    }
+    .mountain-card-right{
+        width: 90%;
+    }
+    .mountain-card-right ul {
+        font-size: 3.2vw;
+    }
+    .hero-card h1{ 
+        font-size: 5vw;
+        color: white;
+    }
+    .hero-card img{
+        height: 50vh;
+        width: 60vw;
+        margin-top: 3vh;
+    }
+    
+}

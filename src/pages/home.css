@@ -1,0 +1,183 @@
+.home-container{
+    width: 100%;
+    height: 150vh;
+    margin: 15vh 0 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-section{
+    height: 60vh;
+    width: 80%;
+    margin-left: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9edada93;
+    border-radius: 20px;
+}
+.hero-section p {
+    width: 50%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    color: #3d0000;
+    font-size: 2vw;
+    text-shadow: 3px 3px 20px #3d0000;
+    flex-direction: column;
+    margin-left: 2vw;
+}
+.navLink button{
+    height: 5vh;
+    width: 10vw;
+    color: green;
+    font-size: 1.5vw;
+    border: 3px solid green;
+    margin-top: 2vw;
+    background-color: #C7EAEA;
+    transition: all 0.3s linear;
+    margin-right: 6vw;
+}
+.navLink button:hover{
+    box-shadow: 5px 5px 50px green;
+    color: white;
+    background-color: green;
+}
+.hero-section img{
+    width: 40%;
+    height: 80%;
+    border-radius: 20px;
+    animation: image 1s linear;
+}
+@keyframes image {
+    from {
+        transform: translateX(-30vw);
+        opacity: 0;
+        visibility: hidden;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+/* wonders cards */
+.wonder-cards {
+    height: 90vh;
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    padding: 1vw;
+    border-radius: 10px;
+}
+.wonder-cards h1{
+    border: 3px solid #3d0000;
+    color: #3d0000;
+    background-color: #3d0000;
+    color: white;
+}
+.wonder-ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 1vw;
+    padding: 0;
+    list-style-type: none;
+}
+.wonder-card {
+    height: 35vh;
+    width: 25vw;
+    background-color: #baeced91;
+    border-radius: 0 30px 0 30px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.wonder-card img {
+    height: 15vh;
+    width: 14vw;
+    object-fit: cover;
+    margin-bottom: 1vh;
+    border-radius: 20px;
+}
+.wonder-card h2 {
+    font-size: 1.2vw;
+    margin: 10px 0;
+    color: #3d0000;
+}
+.wonder-card span, .wonder-card p {
+    font-size: 1rem;
+    margin: 0.5vh 0;
+    color: #3d0000;
+}
+.locate{
+    font-size: 1vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.foot{
+    height: 5vh;
+    background-color: #213956;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    .hero-section {
+        height: 60vh;
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: transparent;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin-left: 0;
+        border-radius: 0;
+    }
+    .hero-section p {
+        width: 80%;
+        height: 22%;
+        font-size: 4vw;
+        padding-left: 4vh;
+        padding-right: 2vh;
+        margin-top: 2vh;
+    }
+    .hero-section img{
+        width: 80%;
+        height: 60%;
+    }
+    .navLink button{
+        height: 5vh;
+        width: 37vw;
+        font-size: 5.5vw;
+        margin-top: 4vh;
+    }
+    .wonder-cards h1{
+        margin-top: 4vh;
+    }
+    .wonder-card{
+        width: 80%;
+    }
+    .wonder-card img {
+        height: 15vh;
+        width: 56vw;
+        object-fit: cover;
+        margin-bottom: 1vh;
+        border-radius: 20px;
+    }
+    .wonder-card h2{
+        font-size: 5vw;
+    }
+    .home-container {
+        height: 310vh;
+        margin: 15vh 0 0 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

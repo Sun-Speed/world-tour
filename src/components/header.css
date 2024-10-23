@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:cursive;
+}
+.container{
+    height: 12vh;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    background-color: #cccccc97;
+    box-shadow: 2px 2px 30px #07070746;
+    position: fixed;
+    top: 0;
+}
+.left{
+    width: 40%;
+    display: flex;
+} 
+.right{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5vw;
+}
+.navlink{
+    text-decoration: none;
+    padding: 0.5vw 1vw;
+    color: black;
+    transition: all 0.2s linear;
+    background-color: #eee;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    margin-right: 4vw;
+}
+.navlink:hover{
+    background-color: yellowgreen;
+}
+.vertical-ellipse{
+    height: 15vh;
+    width: 14vw;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 7vw;
+}
+.left img{
+    height: 9vh;
+    width: 5vw;
+    border-radius: 50%;
+    margin: 1vh 0 0 10vw;
+}
+.left h1{
+    height: 9vh;
+    width: 12vw;
+    font-size: 2vw;
+    border: 5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1vh 0 0 1vw;
+}
+.nav-btn{
+    display: none;
+}
+.left h1 span{
+    height: 6vh;
+    padding: 0.5vw;
+    background-color: #EAB936;
+}
+.speed {
+    border: 5px solid #EAB936;
+    border-left: none;
+    font-size: 2vw;
+    padding: 0.3vw;
+}
+.disflex{
+    display: flex;
+}
+.disnone{
+    display: none;
+}
+
+@media (max-width: 500px) {
+    .container{
+        justify-content: space-between;
+    }
+    .left img{
+        height: 6vh;
+        width: 11vw;
+        margin: 1vh 0 0 1vw;
+    }
+    .left h1 {
+        height: 5vh;
+        width: 23vw;
+        font-size: 6vw;
+        border: 3px solid black;
+        margin: 1vh 0 0 1vw;
+    }
+    .left h1 span{
+        height: 2vh;
+        padding: 2vw;
+        font-size: 3.5vw;
+    }
+    .left{
+        width: 60%;
+    }
+    .right{
+        width: 30%;
+        font-size: 5.5vw;
+    }
+    .speed {
+        font-size: 3.5vw;
+    }
+    .navlink{
+        height: 3vh;
+        width: 90%;
+        border-radius: 0;
+        margin-top: 1vh;
+        margin-right: 0;
+        padding: 1vw;
+        font-size: 2vh;
+    }
+    .navlink:hover{
+        border: none;
+    }
+    .vertical-ellipse{
+        display: flex;
+    }
+    .nav-btn{
+        width: 36%;
+        background-color: white;
+        backdrop-filter: blur(10px);
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        right: 0;
+        align-items: center;
+        flex-direction: column;
+        z-index: 100;
+    }
+}

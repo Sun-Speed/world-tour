@@ -1,0 +1,97 @@
+.forest-card{
+    display: flex;
+    flex-direction: row;
+}
+.forest-card-left p {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+}
+
+.forest-card-left{
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+.forest-card-left img {
+    width: 100%;
+    height: 55%;
+    border-radius: 25px 0 25px 0;
+}
+.forest-card-right{
+    height: 100%;
+    width: 100%;
+    margin-left: 2vw;
+}
+
+.topNo{
+    height: 4vw;
+    width: 4vw;
+    background-color: #FD971A;
+    position: absolute;
+    top: 34vh;
+    animation: rotateBlink 3s infinite;
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+@keyframes rotateBlink {
+    0% {
+        transform: rotate(0deg) scaleX(0);
+        box-shadow: 0 0 25px rgba(254, 151, 26, 0.5);
+        border-radius: 1px;
+    }
+    25% {
+        transform: rotate(45deg) scaleX(1); 
+        box-shadow: 0 0 50px rgba(254, 151, 26, 0.7);
+        border-radius: 20px 0 20px 0;
+    }
+    50% {
+        transform: rotate(0deg) scaleX(1);
+        box-shadow: 0 0 75px rgba(254, 151, 26, 0.5);
+        border-radius: 1px;
+    }
+    75% {
+        transform: rotate(-45deg) scaleX(1);
+        box-shadow: 0 0 100px rgba(254, 151, 26, 0.7);
+        border-radius: 0 20px 0 20px;
+    }
+    100% {
+        transform: rotate(0deg) scaleX(0); 
+        box-shadow: 0 0 125px rgba(254, 151, 26, 0.5); 
+        border-radius: 1px;
+    }
+}
+.gdp-per-capita{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width : 500px) {
+    .forest-card {
+        display: flex;
+        flex-direction: column;
+    }
+    .forest-card-left img {
+        width: 100%;
+        height: 55%;
+    }
+    
+
+    .forest-card-left {
+        height: 53%;
+    }
+    .forest-card-right {
+        height: 47%;
+    }
+    .topNo {
+        height: 12vw;
+        width: 12vw;
+        top: 18vh;
+        left: 30vh;
+        font-size: 4.5vw;
+    }
+}

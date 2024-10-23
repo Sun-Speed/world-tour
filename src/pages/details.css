@@ -1,0 +1,118 @@
+.detBox{
+    border-top: 10px solid #f5b70c;
+    margin: 15vh 0 0 15vw;
+    height: 60vh;
+    width: 70%;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #E6E4E6;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.detBox img{
+    height: 30vh;
+    width: 45%;
+}
+.detCard{
+    height: 30vh;
+    width: 50%;
+    margin-left: 5vw;
+    line-height: 2.5vw;
+}
+p{
+    font-size: 1.2vw;
+    font-weight: 700;  
+}
+.spn{
+    font-weight: 100;
+}
+.lang{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2vw;
+}
+.lang span{
+    font-weight: 700;
+}
+.langBox p{
+    font-weight: 100;
+}
+.langBox{
+    display: flex;
+    
+}
+.borders{
+    display: flex;
+}
+.borders .spn {
+    font-size: 1.2vw;
+}
+.borderUl{
+    display: flex;
+}
+footer {
+    height: 5vh;
+    width: 100%;
+    color: white;
+    font-size: 1.1vw;
+    background-color: #213956;
+    text-align: center;
+    position: absolute;
+    top: 95vh;
+}
+.backBtn{
+    position: absolute;
+    top: 68vh;
+    left: 75vw;
+    height: 5vh;
+    width: 6vw;
+    font-size: 2vw;
+    font-weight: 900;
+    border: 3px solid green;
+    color: green;
+    transition: all 0.3s linear;
+}
+.backBtn:hover{
+    color: white;
+    background-color: green;
+}
+
+@media (max-width: 500px) {
+    .detBox {
+        height: 67vh;
+        width: 82%;
+        flex-direction: column;
+        margin: 15vh 0 0 10vw;
+    }
+    .detBox img {
+        height: 22vh;
+        width: 90%;
+    }
+    .detCard{
+        height: 36vh;
+        width: 87%;
+        margin-left: -1vw;
+        line-height: 4vh;
+    }
+    .lang{
+        font-size: 3.2vw;
+    }
+    p{
+        font-size: 3.2vw;  
+    }
+    .borders .spn {
+        font-size: 3.2vw;
+    }
+    .backBtn {
+        top: 76vh;
+        left: 67vw;
+        height: 4vh;
+        width: 17vw;
+        font-size: 6vw;
+    }
+    footer {
+        font-size: 3.1vw;
+    }
+}
